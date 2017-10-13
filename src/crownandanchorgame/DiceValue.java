@@ -22,7 +22,8 @@ public enum DiceValue {
 	}
 	
 	public static DiceValue getRandom() {
-		int random = RANDOM.nextInt(DiceValue.SPADE.ordinal());
+		int random = RANDOM.nextInt(DiceValue.SPADE.ordinal()+1);
+                //since the index is from 0 to 5 and the 6th value does not appear as the option.
 		return values()[random];
 	}
 	
