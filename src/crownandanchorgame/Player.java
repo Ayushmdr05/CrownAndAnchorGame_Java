@@ -27,7 +27,9 @@ public class Player {
 	}
 	
 	public boolean balanceExceedsLimitBy(int amount) {
-		return (balance - amount > limit);
+		return (balance - amount >= limit);
+                //changing the condition to greater or equal, if only greater sign then the game ends at 
+//                the time when the amount equals to the bet amount.
 	}
 	
 	public void takeBet(int bet) {
