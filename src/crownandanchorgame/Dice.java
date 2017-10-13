@@ -11,7 +11,9 @@ public class Dice {
 	}
 
 	public DiceValue roll() {
-		return DiceValue.getRandom();
+		value = DiceValue.getRandom();
+                return value;
+                // the previous value is changes when we store variable and then return 
 	}		
 	
 	public String toString() {
